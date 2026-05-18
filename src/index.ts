@@ -1,4 +1,4 @@
 import '../stylesheets/index.css';
 
-export * from './components/index.js';
-export * from './setupVue.js';
+export * as components from './components/index.js';
+export { setupVue } from './setupVue.js';

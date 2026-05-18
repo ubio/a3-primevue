@@ -13,6 +13,11 @@
             "import": "./src/index.ts",
             "default": "./src/index.ts"
         },
+        "./components": {
+            "types": "./src/components/index.d.ts",
+            "import": "./src/components/index.ts",
+            "default": "./src/components/index.ts"
+        },
         "./style.css": "./stylesheets/index.css",
         "./stylesheets/index.css": "./stylesheets/index.css"
     },
