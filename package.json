@@ -18,6 +18,11 @@
             "import": "./src/components/index.ts",
             "default": "./src/components/index.ts"
         },
+        "./setup": {
+            "types": "./src/setup.d.ts",
+            "import": "./src/setup.ts",
+            "default": "./src/setup.ts"
+        },
         "./style.css": "./stylesheets/index.css",
         "./stylesheets/index.css": "./stylesheets/index.css"
     },
