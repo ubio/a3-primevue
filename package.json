@@ -1,0 +1,50 @@
+{
+    "name": "@athree/primevue",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Shared PrimeVue setup, styles, and generic Vue components for A3 apps.",
+    "files": [
+        "src/",
+        "stylesheets/"
+    ],
+    "exports": {
+        ".": {
+            "types": "./src/index.d.ts",
+            "import": "./src/index.ts",
+            "default": "./src/index.ts"
+        },
+        "./style.css": "./stylesheets/index.css",
+        "./stylesheets/index.css": "./stylesheets/index.css"
+    },
+    "scripts": {
+        "dev": "tsc -b --watch",
+        "lint": "eslint .",
+        "postversion": "git push && git push --tags",
+        "publish": "npm publish --tag wip"
+    },
+    "peerDependencies": {
+        "@primeuix/themes": "^1.2.5",
+        "primevue": "^4.2.5",
+        "vue": "^3.5.13",
+        "vue-router": "^4.5.0"
+    },
+    "dependencies": {
+        "@codemirror/autocomplete": "^6.20.0",
+        "@codemirror/commands": "^6.10.0",
+        "@codemirror/lang-html": "^6.4.11",
+        "@codemirror/lang-javascript": "^6.2.4",
+        "@codemirror/lang-json": "^6.0.2",
+        "@codemirror/lang-markdown": "^6.5.0",
+        "@codemirror/lang-yaml": "^6.1.2",
+        "@codemirror/language": "^6.11.3",
+        "@codemirror/state": "^6.6.0",
+        "@codemirror/view": "^6.39.1",
+        "@lezer/highlight": "^1.2.3",
+        "mesh-ioc": "^4.1.1"
+    },
+    "devDependencies": {
+        "@flexent/eslint-config": "^2.5.1",
+        "eslint": "^9.39.4",
+        "typescript": "^5.9.3"
+    }
+}

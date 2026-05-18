@@ -1,0 +1,15 @@
+:root {
+    --sphalf: var(--sp0-5);
+    --sp: var(--sp1);
+    --sp0-5: 4px;
+    --sp1: 8px;
+    --sp1-5: 12px;
+    --sp2: 16px;
+    --sp2-5: 20px;
+    --sp3: 24px;
+    --sp4: 32px;
+    --sp5: 40px;
+    --sp6: 48px;
+    --sp7: 56px;
+    --sp8: 64px;
+}

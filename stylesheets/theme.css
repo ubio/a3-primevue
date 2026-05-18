@@ -1,0 +1,104 @@
+:root {
+    --font-family: 'Source Sans Pro', sans-serif;
+    --font-monospace: 'Menlo', 'Monaco', monospace;
+    --font-mono: var(--font-monospace);
+    --font-size-base: 14px;
+    --font-size-xs: 10px;
+    --font-size-sm: 12px;
+    --line-height-base: var(--sp2);
+
+    /* Primitives */
+
+    --p-primary-50: var(--p-indigo-50);
+    --p-primary-100: var(--p-indigo-100);
+    --p-primary-200: var(--p-indigo-200);
+    --p-primary-300: var(--p-indigo-300);
+    --p-primary-400: var(--p-indigo-400);
+    --p-primary-500: var(--p-indigo-500);
+    --p-primary-600: var(--p-indigo-600);
+    --p-primary-700: var(--p-indigo-700);
+    --p-primary-800: var(--p-indigo-800);
+    --p-primary-900: var(--p-indigo-900);
+    --p-primary-950: var(--p-indigo-950);
+
+    --p-border-radius-sm: 2px;
+    --p-border-radius-md: var(--sp0-5);
+    --p-border-radius-lg: var(--sp1-5);
+    --p-border-radius-xl: var(--sp3);
+
+    /* Shared semantic tokens */
+
+    --p-content-background: light-dark(var(--p-surface-0), var(--p-surface-800));
+
+    --control-height: var(--sp4);
+    --control-height-sm: var(--sp3);
+    --control-gap: var(--sp);
+    --control-padding-x: var(--sp1-5);
+    --control-padding-y: var(--sp1);
+    --control-padding-x-sm: var(--sp);
+    --control-padding-y-sm: var(--sp0-5);
+    --control-icon-size: var(--sp2);
+
+    --form-field-height: var(--control-height);
+    --form-field-sm-height: var(--control-height-sm);
+
+    --p-form-field-sm-font-size: var(--font-size-sm);
+
+    --p-form-field-padding-x: var(--control-padding-x);
+    --p-form-field-padding-y: var(--control-padding-y);
+    --p-form-field-sm-padding-x: var(--control-padding-x-sm);
+    --p-form-field-sm-padding-y: var(--control-padding-y-sm);
+
+    /* Components */
+
+    --p-button-gap: var(--control-gap);
+    --p-button-badge-size: var(--sp2);
+    --p-button-icon-only-width: var(--control-height);
+
+    --p-badge-padding: var(--sp0-5);
+    --p-checkbox-width: var(--sp2);
+    --p-checkbox-height: var(--sp2);
+
+    --p-panel-toggleable-header-padding: var(--sp0-5) var(--sp2);
+    --p-panel-content-padding: 0 var(--sp2) var(--sp);
+
+    /* App semantic colors */
+
+    --iso-surface-0: light-dark(var(--p-surface-0), var(--p-surface-900));
+    --iso-surface-50: light-dark(var(--p-surface-50), var(--p-surface-800));
+    --iso-surface-100: light-dark(var(--p-surface-100), var(--p-surface-700));
+    --iso-surface-200: light-dark(var(--p-surface-200), var(--p-surface-600));
+    --iso-surface-300: light-dark(var(--p-surface-300), var(--p-surface-500));
+    --iso-surface-400: light-dark(var(--p-surface-400), var(--p-surface-400));
+    --iso-surface-500: light-dark(var(--p-surface-500), var(--p-surface-300));
+    --iso-surface-600: light-dark(var(--p-surface-600), var(--p-surface-200));
+    --iso-surface-700: light-dark(var(--p-surface-700), var(--p-surface-100));
+    --iso-surface-800: light-dark(var(--p-surface-800), var(--p-surface-50));
+    --iso-surface-900: light-dark(var(--p-surface-900), var(--p-surface-0));
+
+    --iso-primary-50: light-dark(var(--p-primary-50), var(--p-primary-950));
+    --iso-primary-100: light-dark(var(--p-primary-100), var(--p-primary-900));
+    --iso-primary-200: light-dark(var(--p-primary-200), var(--p-primary-800));
+    --iso-primary-300: light-dark(var(--p-primary-300), var(--p-primary-700));
+    --iso-primary-400: light-dark(var(--p-primary-400), var(--p-primary-600));
+    --iso-primary-500: light-dark(var(--p-primary-500), var(--p-primary-500));
+    --iso-primary-600: light-dark(var(--p-primary-600), var(--p-primary-400));
+    --iso-primary-700: light-dark(var(--p-primary-700), var(--p-primary-300));
+    --iso-primary-800: light-dark(var(--p-primary-800), var(--p-primary-200));
+    --iso-primary-900: light-dark(var(--p-primary-900), var(--p-primary-100));
+    --iso-primary-950: light-dark(var(--p-primary-950), var(--p-primary-50));
+    --iso-primary-color: var(--iso-primary-500);
+    --iso-primary-contrast-color: light-dark(var(--p-surface-0), var(--p-surface-950));
+
+    --iso-danger-50: light-dark(var(--p-red-50), var(--p-red-950));
+    --iso-danger-100: light-dark(var(--p-red-100), var(--p-red-900));
+    --iso-danger-200: light-dark(var(--p-red-200), var(--p-red-800));
+    --iso-danger-300: light-dark(var(--p-red-300), var(--p-red-700));
+    --iso-danger-400: light-dark(var(--p-red-400), var(--p-red-600));
+    --iso-danger-500: light-dark(var(--p-red-500), var(--p-red-500));
+    --iso-danger-600: light-dark(var(--p-red-600), var(--p-red-400));
+    --iso-danger-700: light-dark(var(--p-red-700), var(--p-red-300));
+    --iso-danger-800: light-dark(var(--p-red-800), var(--p-red-200));
+    --iso-danger-900: light-dark(var(--p-red-900), var(--p-red-100));
+    --iso-danger-950: light-dark(var(--p-red-950), var(--p-red-50));
+}

@@ -1,0 +1,31 @@
+h2, h3, h4, h5, h6, p, ul, ol, dl {
+    margin: var(--sp) 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: var(--font-size-sm);
+    font-weight: bold;
+    color: var(--p-text-muted-color);
+    text-transform: uppercase;
+    margin: var(--sp0-5) 0;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--sp0-5);
+}
+
+dd {
+    font-weight: bold;
+}

@@ -1,0 +1,120 @@
+.p-panel-content-wrapper {
+    min-width: 0;
+}
+
+.p-panel-header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.p-selectbutton {
+    height: var(--control-height);
+}
+
+.p-selectbutton .p-togglebutton,
+.p-button,
+.p-inputtext,
+.p-select,
+.p-dropdown,
+.p-inputnumber-button,
+.p-tag {
+    border-radius: var(--p-border-radius-md);
+}
+
+.p-selectbutton .p-togglebutton {
+    padding: var(--control-padding-y-sm) var(--control-padding-x-sm);
+}
+
+.p-selectbutton-sm {
+    height: var(--control-height-sm);
+}
+
+.p-button {
+    --p-button-size: var(--control-height);
+    gap: var(--control-gap);
+    height: var(--p-button-size);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.p-button-sm {
+    --p-button-size: var(--control-height-sm);
+    padding: var(--control-padding-y-sm) var(--control-padding-x-sm);
+}
+
+.p-button-icon-only {
+    width: var(--p-button-size);
+    padding: 0;
+    gap: 0;
+    justify-content: center;
+}
+
+.p-button-label {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.p-tag {
+    padding: var(--control-padding-y-sm) var(--control-padding-x-sm);
+    font-size: var(--font-size-sm);
+    min-height: var(--control-height-sm);
+}
+
+.p-inputtext,
+.p-select,
+.p-dropdown {
+    --p-control-size: var(--control-height);
+    height: var(--p-control-size);
+}
+
+.p-inputtext {
+    padding: var(--control-padding-y) var(--control-padding-x);
+}
+
+.p-select,
+.p-dropdown {
+    min-width: 0;
+}
+
+.p-inputtext-sm,
+.p-select-sm,
+.p-dropdown-sm {
+    --p-control-size: var(--control-height-sm);
+    font-size: var(--font-size-sm);
+}
+
+.p-inputtext-sm {
+    padding: var(--control-padding-y-sm) var(--control-padding-x-sm);
+}
+
+.p-select-sm .p-select-dropdown,
+.p-dropdown-sm .p-dropdown-trigger {
+    width: var(--control-height-sm);
+}
+
+.p-textarea {
+    height: auto;
+    min-height: var(--control-height);
+}
+
+.p-inputnumber {
+    height: var(--control-height);
+}
+
+.p-inputnumber .p-inputtext {
+    height: 100%;
+}
+
+.p-inputnumber-button {
+    width: var(--control-height-sm);
+    min-height: 0;
+}
+
+.p-menu-item-icon {
+    width: var(--control-icon-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

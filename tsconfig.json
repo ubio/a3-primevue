@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "noEmit": true,
+        "target": "ES2024",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "strict": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "useDefineForClassFields": false,
+        "allowJs": true,
+        "checkJs": false,
+        "lib": [
+            "ES2024",
+            "DOM",
+            "DOM.Iterable"
+        ]
+    },
+    "include": [
+        "src",
+    ]
+}
