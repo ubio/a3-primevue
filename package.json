@@ -29,7 +29,7 @@
     "scripts": {
         "dev": "tsc -b --watch",
         "lint": "eslint .",
-        "postversion": "git push && git push --tags",
+        "postversion": "git push origin $(git branch --show-current) --tags",
         "publish": "npm publish --tag wip"
     },
     "peerDependencies": {
