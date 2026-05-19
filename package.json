@@ -53,7 +53,7 @@
         "mesh-ioc": "^4.1.1"
     },
     "devDependencies": {
-        "@flexent/eslint-config": "^2.5.1",
+        "@flexent/eslint-config": "^2.6.0",
         "eslint": "^9.39.4",
         "typescript": "^5.9.3"
     }

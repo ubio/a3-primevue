@@ -1,11 +1,11 @@
-import type * as AutocompleteModuleImport from '@codemirror/autocomplete';
-import type * as CommandsModuleImport from '@codemirror/commands';
-import type * as LanguageModuleImport from '@codemirror/language';
-import { EditorState, type Extension } from '@codemirror/state';
-import type * as ViewModuleImport from '@codemirror/view';
-import type * as HighlightModuleImport from '@lezer/highlight';
+import * as AutocompleteModuleImport from '@codemirror/autocomplete';
+import * as CommandsModuleImport from '@codemirror/commands';
+import * as LanguageModuleImport from '@codemirror/language';
+import { EditorState, Extension } from '@codemirror/state';
+import * as ViewModuleImport from '@codemirror/view';
+import * as HighlightModuleImport from '@lezer/highlight';
 
-import { type CodeMirrorControllerConfig } from './CodeMirrorTypes.js';
+import { CodeMirrorControllerConfig } from './CodeMirrorTypes.js';
 
 export type AutocompleteModule = typeof AutocompleteModuleImport;
 export type CommandsModule = typeof CommandsModuleImport;

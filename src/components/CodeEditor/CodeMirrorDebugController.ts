@@ -1,14 +1,14 @@
-import { type Extension, RangeSet, StateEffect, type StateEffectType, StateField, type Transaction } from '@codemirror/state';
+import { Extension, RangeSet, StateEffect, StateEffectType, StateField, Transaction } from '@codemirror/state';
 import {
-    type BlockInfo,
+    BlockInfo,
     Decoration,
-    type DecorationSet,
+    DecorationSet,
     EditorView,
     gutter,
     GutterMarker,
 } from '@codemirror/view';
 
-import { type CodeMirrorControllerConfig, type EditorBreakpoint } from './CodeMirrorTypes.js';
+import { CodeMirrorControllerConfig, EditorBreakpoint } from './CodeMirrorTypes.js';
 
 class BreakpointMarker extends GutterMarker {
 

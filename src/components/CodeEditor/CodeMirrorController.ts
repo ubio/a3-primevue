@@ -1,10 +1,10 @@
-import { EditorSelection, type Extension } from '@codemirror/state';
-import type { EditorView, ViewUpdate } from '@codemirror/view';
+import { EditorSelection, Extension } from '@codemirror/state';
+import { EditorView, ViewUpdate } from '@codemirror/view';
 import { dependency, Mesh } from 'mesh-ioc';
 
 import { CodeMirrorDebugController } from './CodeMirrorDebugController.js';
-import { CodeMirrorModuleLoader, type CodeMirrorModules } from './CodeMirrorModuleLoader.js';
-import { type CodeMirrorControllerConfig, type EditorBreakpoint } from './CodeMirrorTypes.js';
+import { CodeMirrorModuleLoader, CodeMirrorModules } from './CodeMirrorModuleLoader.js';
+import { CodeMirrorControllerConfig, EditorBreakpoint } from './CodeMirrorTypes.js';
 
 export class CodeMirrorController {
 

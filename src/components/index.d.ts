@@ -1,4 +1,4 @@
-import type { DefineComponent } from 'vue';
+import { DefineComponent } from 'vue';
 
 export const CodeEditor: DefineComponent<Record<string, unknown>, Record<string, unknown>, any>;
 export const CollapsiblePanel: DefineComponent<Record<string, unknown>, Record<string, unknown>, any>;
