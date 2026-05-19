@@ -49,7 +49,8 @@
         "@codemirror/state": "^6.6.0",
         "@codemirror/view": "^6.39.1",
         "@lezer/highlight": "^1.2.3",
-        "mesh-ioc": "^4.1.1"
+        "mesh-ioc": "^4.1.1",
+        "nanoevent": "^1.0.0"
     },
     "devDependencies": {
         "@flexent/eslint-config": "^2.6.0",

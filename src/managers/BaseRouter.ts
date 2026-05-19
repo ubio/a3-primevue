@@ -1,0 +1,67 @@
+import { dependency } from 'mesh-ioc';
+import { Event } from 'nanoevent';
+import { App as VueApp } from 'vue';
+import { RouteLocation, RouteLocationRaw, Router } from 'vue-router';
+
+export abstract class BaseRouter {
+
+    private vue = dependency<VueApp>(this, 'vue');
+
+    router: Router;
+
+    routeUpdated = new Event<{
+        route: RouteLocation;
+    }>();
+
+    constructor() {
+        this.router = this.createRouter();
+        this.router.afterEach(route => {
+            document.title = String(route.meta.title ?? this.defaultPageTitle);
+            this.onRouteChange(route);
+        });
+    }
+
+    abstract createRouter(): Router;
+
+    init() {
+        this.vue.use(this.router);
+    }
+
+    get defaultPageTitle() {
+        return 'App';
+    }
+
+    get url() {
+        return this.getCurrentRoute().fullPath;
+    }
+
+    getCurrentRoute() {
+        return this.router.currentRoute as unknown as RouteLocation;
+    }
+
+    isActive(route: RouteLocation, deep = true) {
+        const r = this.router.resolve(route);
+        const current = this.getCurrentRoute();
+        return deep ? current.path.startsWith(r.path) : r.path === current.path;
+    }
+
+    goto(to: RouteLocationRaw, newTab?: boolean) {
+        if (newTab) {
+            this.openInNewTab(to);
+        } else {
+            this.router.push(to);
+        }
+    }
+
+    openInNewTab(to: RouteLocationRaw) {
+        const resolved = this.router.resolve(to);
+        window.open(resolved.fullPath, '_blank')?.focus();
+    }
+
+    private onRouteChange(route: RouteLocation) {
+        this.routeUpdated.emit({
+            route,
+        });
+    }
+
+}
