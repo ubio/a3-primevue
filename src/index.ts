@@ -1,5 +1,3 @@
-import '../stylesheets/index.css';
-
 export * as components from './components/index.js';
 export * from './managers/BaseRouter.js';
 export * from './managers/NotificationsManager.js';

@@ -23,8 +23,7 @@
             "import": "./src/setup.ts",
             "default": "./src/setup.ts"
         },
-        "./style.css": "./stylesheets/index.css",
-        "./stylesheets/index.css": "./stylesheets/index.css"
+        "./style.css": "./stylesheets/index.css"
     },
     "scripts": {
         "dev": "tsc -b --watch",
