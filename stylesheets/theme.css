@@ -54,6 +54,7 @@
     --p-button-gap: var(--control-gap);
     --p-button-badge-size: var(--sp2);
     --p-button-icon-only-width: var(--control-height);
+    --p-button-label-font-weight: 400;
 
     --p-badge-padding: var(--sp0-5);
     --p-checkbox-width: var(--sp2);
