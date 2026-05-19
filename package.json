@@ -29,8 +29,7 @@
     "scripts": {
         "dev": "tsc -b --watch",
         "lint": "eslint .",
-        "postversion": "git push origin $(git branch --show-current) --tags",
-        "publish": "npm publish --tag wip"
+        "postversion": "npm publish --access=public && git push origin $(git branch --show-current) --tags"
     },
     "peerDependencies": {
         "@primeuix/themes": "^1.2.5",
