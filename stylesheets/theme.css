@@ -5,6 +5,9 @@
     --font-size-base: 14px;
     --font-size-xs: 10px;
     --font-size-sm: 12px;
+    --font-size-lg: 16px;
+    --font-size-xl: 20px;
+    --font-size-xxl: 24px;
     --line-height-base: var(--sp2);
 
     /* Primitives */
