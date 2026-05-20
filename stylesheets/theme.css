@@ -65,6 +65,10 @@
 
     /* App semantic colors */
 
+    --p-text-color: light-dark(#000, #fff);
+    --p-text-hover-color: light-dark(#000, #fff);
+    --p-button-text-secondary-color: var(--p-text-color);
+
     --iso-surface-0: light-dark(var(--p-surface-0), var(--p-surface-900));
     --iso-surface-50: light-dark(var(--p-surface-50), var(--p-surface-800));
     --iso-surface-100: light-dark(var(--p-surface-100), var(--p-surface-700));
