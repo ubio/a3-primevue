@@ -4,6 +4,7 @@
     "type": "module",
     "description": "Shared PrimeVue setup, styles, and generic Vue components for A3 apps.",
     "files": [
+        "assets/",
         "src/",
         "stylesheets/"
     ],
@@ -23,7 +24,8 @@
             "import": "./src/setup.ts",
             "default": "./src/setup.ts"
         },
-        "./style.css": "./stylesheets/index.css"
+        "./style.css": "./stylesheets/index.css",
+        "./favicon.svg": "./assets/favicon.svg"
     },
     "scripts": {
         "dev": "tsc -b --watch",

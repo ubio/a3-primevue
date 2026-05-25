@@ -1,3 +1,4 @@
+import Backdrop from './Backdrop.vue';
 import CodeEditor from './CodeEditor/CodeEditor.vue';
 import JsonEditor from './CodeEditor/JsonEditor.vue';
 import CollapsiblePanel from './CollapsiblePanel.vue';
@@ -6,6 +7,7 @@ import ErrorMessage from './ErrorMessage.vue';
 import Filler from './Filler.vue';
 import HGroup from './HGroup.vue';
 import Logo from './Logo.vue';
+import LogoIcon from './LogoIcon.vue';
 import RouterButton from './RouterButton.vue';
 import ScopeInspectorView from './ScopeInspector/ScopeInspectorView.vue';
 import SplitPanel from './SplitPanel.vue';
@@ -14,6 +16,7 @@ import TreeView from './TreeView.vue';
 import VGroup from './VGroup.vue';
 
 export {
+    Backdrop,
     CodeEditor,
     CollapsiblePanel,
     DataExplorer,
@@ -22,6 +25,7 @@ export {
     HGroup,
     JsonEditor,
     Logo,
+    LogoIcon,
     RouterButton,
     ScopeInspectorView,
     SplitPanel,

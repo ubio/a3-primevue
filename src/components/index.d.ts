@@ -1,5 +1,6 @@
 import { DefineComponent } from 'vue';
 
+export const Backdrop: DefineComponent<Record<string, unknown>, Record<string, unknown>, any>;
 export const CodeEditor: DefineComponent<Record<string, unknown>, Record<string, unknown>, any>;
 export const CollapsiblePanel: DefineComponent<Record<string, unknown>, Record<string, unknown>, any>;
 export const DataExplorer: DefineComponent<Record<string, unknown>, Record<string, unknown>, any>;
@@ -8,6 +9,7 @@ export const Filler: DefineComponent<Record<string, unknown>, Record<string, unk
 export const HGroup: DefineComponent<Record<string, unknown>, Record<string, unknown>, any>;
 export const JsonEditor: DefineComponent<Record<string, unknown>, Record<string, unknown>, any>;
 export const Logo: DefineComponent<Record<string, unknown>, Record<string, unknown>, any>;
+export const LogoIcon: DefineComponent<Record<string, unknown>, Record<string, unknown>, any>;
 export const RouterButton: DefineComponent<Record<string, unknown>, Record<string, unknown>, any>;
 export const ScopeInspectorView: DefineComponent<Record<string, unknown>, Record<string, unknown>, any>;
 export const SplitPanel: DefineComponent<Record<string, unknown>, Record<string, unknown>, any>;
